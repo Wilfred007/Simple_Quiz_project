@@ -19,14 +19,14 @@ function Quiz() {
             correct_answer: "Pop()"
         },
         {
-            question: "Which of these data types can hold multiple variables?",
-            options: ["Array", "Boolean", "Integer", "String"],
-            correct_answer: "Array"
+            question: "WWhich of the following is a way to create an object in JavaScript?",
+            options: ["var obj = {}", "var obj = pop()", "var obj = []", "const obj = filter"],
+            correct_answer: "var obj = {}"
         },
         {
-            question: "Which of these data types can hold multiple variables?",
-            options: ["Array", "Boolean", "Integer", "String"],
-            correct_answer: "Array"
+            question: "How can you add an element to the beginning of an array in JavaScript?",
+            options: ["array.push()", "array.shift()", "array.pop()", "array.unshift()"],
+            correct_answer: "array.unshift()"
         }
     ]
     ;
@@ -93,7 +93,7 @@ function Quiz() {
                             {option}
                         </button>
                     ))}
-                    <div className='flex justify-between p-10'>
+                    <div className='flex justify-between p-10 sm:gap-4'>
                     <button onClick={handleBackClick} disabled={questionIndex === 0} className='bg-red-400  px-8 py-2 text-white rounded-md hover:bg-red-600'>
                         Back
                     </button>
